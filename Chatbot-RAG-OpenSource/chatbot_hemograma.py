@@ -19,7 +19,7 @@ vectorstore = Chroma(name_index, embedding)
 retriever = vectorstore.as_retriever(search_type="similarity",search_kwargs={'k': 10})
 
 # Model text-generation
-llm = pipeline("text-generation", model="meta-llama/Meta-Llama-3-8B")
+llm = pipeline('text-generation', model='gpt2')
 
 # Prompt
 system_prompt = (
